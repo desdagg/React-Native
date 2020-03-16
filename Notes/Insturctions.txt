@@ -1,0 +1,33 @@
+Install node.js most recent version
+
+npm install expo-cli --global
+
+expo init "project name here"
+
+npm start (or <expo start> instead maybe)
+	- can be run in the terminal of VS Code
+
+
+reactnative.dev/docs/components-and-apis
+
+https://expo.io/learn
+
+possible media queries for different device sizes
+
+react native uses flexbox
+	- https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+
+
+React Native - 
+	probably want to use the Expo CLI/Tool
+		- you can switch from Expo to Native CLI if you need to.
+
+	look into ract hooks (?)
+
+	- Styling is not done in CSS, its done in JS based on CSS syntax but only a subset of css properties and features
+		- inline styles and StyleSheet Objects (preferred)
+sketchingwithcss.com/samplechapter/cheatsheet.html
+
+
+******** watch for case sensitivity!!!!! ***********

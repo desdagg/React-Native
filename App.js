@@ -1,19 +1,55 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
 
 export default function App() {
+  // justifyContent - organise items along the main axies 
+  // alignItems     - organise items along the cross axies (opposeite to main)
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+    <View style={{padding: 50, flexDirection: 'row', width: '100%', height: 800}}>
+      <View 
+        style={{
+          backgroundColor: 'red',
+          width: '33.3%',
+          height: '100%',
+          justifyContent: 'center',
+          alignItems: 'center'
+        }}
+      >
+        <Text>1</Text>
+      </View>
+      <View 
+        style={{
+          backgroundColor: '#d142f5',
+          width: '33.3%',
+          height: '100%',
+          justifyContent: 'center',
+          alignItems: 'center'
+        }}
+      >
+        <Text>1</Text>
+      </View>
+      <View
+        style={{
+          backgroundColor: '#0ff7ff',
+          width: '33.3%',
+          height: '100%',
+          justifyContent: 'center',
+          alignItems: 'center'
+        }}
+      >
+        <Text>3</Text>
+      </View>
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
+
+// old code for reference
+
+ // const [outputText, setOutputText] = useState('Default text yo');
+
+/**
+ * <Text>{outputText}</Text>
+ *     <Button title="Change Text" onPress={() => setOutputText('Button pressed yo!')}/>
+ */
